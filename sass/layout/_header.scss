@@ -1,0 +1,40 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom,
+
+    /* Sass allows a hex color to be passed to rgba but regular CSS does not */
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)),
+  url(../img/hero.jpg);
+  background-size: cover;
+
+  /* This controls how the image is cropped as the viewport size changes */
+  background-position: top;
+
+  /* 
+   * This is needed to define the origin for the positioning of
+   * the child elements which have 'position: absolute'
+  */
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+  
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
