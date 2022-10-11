@@ -4,6 +4,7 @@
   // Makes it look as if the card is actually coming towards you when rotated
   // The higher the value, the less dramatic the effect
   perspective: 150rem;
+  transform-style: preserve-3d; // Firefox
 
   position: relative;
   height: 52rem;

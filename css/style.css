@@ -250,6 +250,7 @@ body {
 
 .card {
   perspective: 150rem;
+  transform-style: preserve-3d;
   position: relative;
   height: 52rem; }
   .card__side {
